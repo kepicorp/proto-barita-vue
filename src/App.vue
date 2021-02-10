@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper indigo darken-4">
+          <img src="https://cornerstone.com.jm/wp-content/uploads/2019/10/Barita_logo-1024x576.jpg" height="56px">
+          <ul class="right hide-on-med-and-down">
+            <li><router-link to="/">Dashboard</router-link></li>
+            <li><router-link to="/bonds">Bonds</router-link></li>
+            <li><router-link to="/equity">Equity</router-link></li>
+            <li><router-link to="/cash">Cash</router-link></li>
+            <li><router-link to="/fx">FX</router-link></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<styles src='./css/materialize.min.css'>
+</styles>
