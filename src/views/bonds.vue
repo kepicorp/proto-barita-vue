@@ -1,11 +1,13 @@
 <template>
     <div class="row">
         <div class="col s2 m2">
-            <h4>Bonds</h4>
+            <h5>Bonds</h5>
         </div>
         <div class="col s10 m10">
             <button v-if="!newdata" v-on:click="updateSource()" class="btn waves-effect waves-light">Load from FFDC
             </button>
+        </div>
+        <div class="col s10 m10">
             <button v-if="newdata" class="btn waves-effect waves-light" disabled>Loaded</button>
         </div>
         <div class="col s12 m12">
